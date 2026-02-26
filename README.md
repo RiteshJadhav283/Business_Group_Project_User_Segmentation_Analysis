@@ -37,12 +37,14 @@ python -m textblob.download_corpora  # Required for sentiment analysis
 ```
 
 ### 4. Prepare the Data
-Ensure the dataset is located in the `DataSet/archive/` directory. 
-If you only see `archive.zip` in `DataSet/`, unzip it:
+The dataset is too large to be hosted on GitHub and must be downloaded manually.
+1. Download the dataset from Kaggle: [BoardGameGeek Reviews Dataset](https://www.kaggle.com/datasets/jvanelteren/boardgamegeek-reviews?resource=download)
+2. Place the downloaded `archive.zip` file into the `DataSet/` folder of this project.
+3. Extract the contents:
 ```bash
 unzip DataSet/archive.zip -d DataSet/
 ```
-The expected files are:
+The expected directory structure should be:
 - `DataSet/archive/bgg-15m-reviews.csv`
 - `DataSet/archive/games_detailed_info.csv`
 
