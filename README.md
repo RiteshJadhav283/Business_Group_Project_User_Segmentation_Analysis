@@ -55,11 +55,6 @@ Open the Jupyter notebook and run all cells:
 jupyter notebook BoardGame_User_Segmentation_and_Revenue_Analysis.ipynb
 ```
 
-Additionally, you can regenerate the notebook from the source script if needed:
-```bash
-python create_notebook.py
-```
-
 ## Technologies Used
 - **Pandas/NumPy**: Data manipulation
 - **Matplotlib/Seaborn**: Data visualization
