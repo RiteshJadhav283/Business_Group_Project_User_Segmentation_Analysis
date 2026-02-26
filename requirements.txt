@@ -3,6 +3,7 @@ numpy
 matplotlib
 seaborn
 scikit-learn
-textblob
-nbformat
-jupyter
+scipy
+pyarrow
+streamlit
+joblib

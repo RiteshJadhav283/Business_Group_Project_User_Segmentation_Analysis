@@ -1,2 +1,7 @@
-archive
+# Raw dataset files — too large for GitHub
+archive/
 archive.zip
+*.csv
+*.bz2
+*.gz
+*.zip

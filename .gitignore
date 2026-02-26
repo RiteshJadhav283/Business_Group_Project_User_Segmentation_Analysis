@@ -1,2 +1,26 @@
+# ── Virtual environment ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Dataset (too large for GitHub) ───────────────────────────────────────────
+DataSet/archive/
+DataSet/archive.zip
+DataSet/*.csv
+DataSet/*.bz2
+DataSet/*.gz
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+# *.ipynb
+
+# ── macOS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── Scratch / test files ──────────────────────────────────────────────────────
 test.txt
-venv
