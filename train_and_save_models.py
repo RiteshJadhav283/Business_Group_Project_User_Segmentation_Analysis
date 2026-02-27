@@ -30,7 +30,7 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 # ── Load data ─────────────────────────────────────────────────────────────────
 print("Loading data …")
 try:
-    df_reviews = pd.read_csv(REVIEWS_PATH, nrows=1_500_000)
+    df_reviews = pd.read_csv(REVIEWS_PATH)  # load entire dataset
 except FileNotFoundError:
     raise FileNotFoundError(
         f"Reviews file not found at '{REVIEWS_PATH}'. "
@@ -142,9 +142,7 @@ df_games_small = df_games[available].copy()
 df_games_small.to_parquet(os.path.join(MODELS_DIR, "games_summary.parquet"), index=False)
 
 # Save a small reviews rating sample for EDA
-ratings_sample = df_reviews["rating"].dropna().sample(
-    min(200_000, len(df_reviews)), random_state=42
-).values
+ratings_sample = df_reviews["rating"].dropna().values  # use full dataset
 joblib.dump(ratings_sample, os.path.join(MODELS_DIR, "ratings_sample.pkl"))
 
 print("Done! All files saved to the 'models/' directory.")
