@@ -102,5 +102,5 @@ streamlit run app.py
 ---
 
 ## 👨‍💻 Author
-**Ritesh Jadhav**  
+**Ritesh Jadhav ,Ved Naik, Sanchita Suryavanshi, Sarang Gole**  
 *Business Group Project: User Segmentation & Revenue Analysis*
