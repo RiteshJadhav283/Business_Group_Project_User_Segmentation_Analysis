@@ -142,7 +142,9 @@ df_games_small = df_games[available].copy()
 df_games_small.to_parquet(os.path.join(MODELS_DIR, "games_summary.parquet"), index=False)
 
 # Save a small reviews rating sample for EDA
-ratings_sample = df_reviews["rating"].dropna().values  # use full dataset
+ratings_sample = df_reviews["rating"].dropna().sample(
+    min(500_000, len(df_reviews)), random_state=42
+).values  # 500 k sample – enough for EDA charts
 joblib.dump(ratings_sample, os.path.join(MODELS_DIR, "ratings_sample.pkl"))
 
 print("Done! All files saved to the 'models/' directory.")
