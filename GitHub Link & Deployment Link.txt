@@ -1,0 +1,3 @@
+GitHub Link: https://github.com/RiteshJadhav283/Business_Group_Project_User_Segmentation_Analysis
+
+Deployment Link: https://businessgroupprojectusersegmentationanalysis-fkmfgpnvaef4zwkp2.streamlit.app/
