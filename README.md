@@ -1,3 +1,5 @@
+# Group - 10 ( Jensen Huang )
+
 # Board Game User Segmentation & Rating-Driven Revenue Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
